@@ -1,0 +1,132 @@
+h1{
+    padding-left: 10px;
+}
+
+.movie-list-container{
+    padding: 20px;
+}
+.movie-list-wrapper{
+    position: relative;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+} 
+.movie-list-item:hover .movie-list-item-title{
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    font-size: large;
+}
+.movie-list-item:hover .movie-list-item-desc{
+    position: absolute;
+    top: 25%;
+    left: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+.movie-list-item:hover .playbtn{
+    top: 40%;
+    left: 140px;
+    color: yellow;
+}        
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    bottom: 5px;
+    object-fit: cover;
+    border-radius: 20px;
+} 
+
+button{
+    width: 100px;
+    height: 25px;
+    background-color: rgba(221, 221, 12, 0.801);
+    color: hsla(253, 68%, 21%, 0.959);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.movie-list-item-title{
+    color: hsl(253, 68%, 21%)f;
+    padding: 15px 10px 10px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: -20px;
+    left: 10px;
+}  
+.movie-list-item-desc {
+    color: hsl(253, 68%, 21%);
+    padding: 10px;
+    font-size: 14px;
+    top: 40%;
+    left: 20px;
+    transition: 1s all ease-in-out;
+}  
+.movie-list-item-button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+    bottom: 70px;
+    left: 120px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.playbtn{
+    position: absolute;
+    top: 30%;
+    left: 120px;
+    font-size: 50px;
+    color: #fff;
+}
+.arrow{
+    font-size: 100px;
+    position: absolute;
+    top: 90px;
+    color: #fff;
+    opacity: 0.9;
+    right: 0;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 740px) {
+   .dotsbox{
+    display: none;
+   } 
+}
+.more{
+    position: absolute;
+    color: black;
+    padding: 15px 10px 10px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: -20px;
+    left: 10px;
+}

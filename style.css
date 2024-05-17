@@ -1,0 +1,499 @@
+#search-input{
+    visibility: hidden;
+}
+
+/* Mobile responsive not complete though */
+@media(width <= 1400px) {
+    #search-input{
+        visibility: hidden;
+    }
+    /* Because of bootstrap css it clashes with this css is they dont become a column */
+    nav{
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+    }
+    ul{
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* All movies */
+#movies {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: start;
+    justify-content: flex-start;
+   
+    /* justify-content: start;
+    align-items: center; */
+    /* background-color: rgb(22, 83, 66); */
+    width: 90%;
+   
+}
+
+.movie_item {
+    margin: 1rem;
+    
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.title {
+    padding-top: 1px;
+    color: black;
+    text-align: start;
+    font-size: large;
+}
+
+.movie_img_rounded {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Single Movie */
+#movie {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+   
+    /* justify-content: start;
+    align-items: center; */
+    /* background-color: rgb(22, 83, 66); */
+    width: 90%;
+   
+}
+/* 
+.img-fluid{
+    width: 100%;
+} */
+.container{
+
+    margin-top: 70px;
+   
+}
+
+/* .container img{
+    width: 500px;
+} */
+
+#movieDetails h2{
+   font-weight: bold; 
+}
+
+
+.onemovie_item {
+    margin: 1rem;
+    
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.title {
+    padding-top: 10px;
+    color: black;
+    text-align: start;
+    font-size: large;
+}
+
+.onemovie_img_rounded {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* All Tv shows */
+#tvshows {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: start;
+    justify-content: flex-start;
+   
+    /* justify-content: start;
+    align-items: center; */
+    /* background-color: rgb(22, 83, 66); */
+    width: 90%;
+   
+}
+
+.tvshows_item {
+    margin: 1rem;
+    
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.title {
+    padding-top: 10px;
+    color: black;
+    text-align: start;
+    font-size: large;
+}
+
+.tvshows_img_rounded {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* one tvshow */
+
+#tvshow {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+   
+    /* justify-content: start;
+    align-items: center; */
+    /* background-color: rgb(22, 83, 66); */
+    width: 90%;
+   
+}
+
+#tvshowDetails h2{
+    font-weight: bold; 
+ }
+ 
+ 
+ .onetvshow_item {
+     margin: 1rem;
+     
+     text-align: center;
+     color: black;
+     font-size: 25px;
+     width: 300px;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: flex-start;
+ }
+ 
+ .title {
+     padding-top: 10px;
+     color: black;
+     text-align: start;
+     font-size: large;
+ }
+ 
+ .onetvshow_img_rounded {
+     border-radius: 10px;
+     width: 100%;
+     height: 100%;
+     object-fit: fill;
+ }
+
+/* all Games */
+
+#games {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: start;
+    justify-content: flex-start;
+   
+    /* justify-content: start;
+    align-items: center; */
+    /* background-color: rgb(22, 83, 66); */
+    width: 90%;
+   
+}
+
+.games_item {
+    margin: 1rem;
+    
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.title {
+    padding-top: 10px;
+    color: black;
+    text-align: start;
+    font-size: large;
+}
+
+.games_img_rounded {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* one game */
+
+#game {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+   
+    /* justify-content: start;
+    align-items: center; */
+    /* background-color: rgb(22, 83, 66); */
+    width: 90%;
+   
+}
+
+#gameDetails h2{
+    font-weight: bold; 
+ }
+ 
+ 
+ .onegame_item {
+     margin: 1rem;
+     
+     text-align: center;
+     color: black;
+     font-size: 25px;
+     width: 300px;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: flex-start;
+ }
+ 
+ .title {
+     padding-top: 10px;
+     color: black;
+     text-align: start;
+     font-size: large;
+ }
+ 
+ .onegame_img_rounded {
+     border-radius: 10px;
+     width: 100%;
+     height: 100%;
+     object-fit: fill;
+ }
+
+/* all collections */
+#collections {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: start;
+    justify-content: flex-start;
+   
+    /* justify-content: start;
+    align-items: center; */
+    /* background-color: rgb(22, 83, 66); */
+    width: 90%;
+   
+}
+
+.collection_item {
+    margin: 1rem;
+    
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.title {
+    padding-top: 10px;
+    color: black;
+    text-align: start;
+    font-size: large;
+}
+
+.collections_img_rounded {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* one collection */
+
+#collection {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+   
+    /* justify-content: start;
+    align-items: center; */
+    /* background-color: rgb(22, 83, 66); */
+    width: 90%;
+   
+}
+
+#collectionDetails h2{
+    font-weight: bold; 
+ }
+ 
+ 
+ .onecollection_item {
+     margin: 1rem;
+     
+     text-align: center;
+     color: black;
+     font-size: 25px;
+     width: 300px;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: flex-start;
+ }
+ 
+ .title {
+     padding-top: 10px;
+     color: black;
+     text-align: start;
+     font-size: large;
+ }
+ 
+ .onecollection_img_rounded {
+     border-radius: 10px;
+     width: 100%;
+     height: 100%;
+     object-fit: fill;
+ }
+
+#carouselExample{
+    display: flex;
+    flex-direction: column;
+    /* background-color: burlywood; */
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-item{
+    display: block;
+    width: 600px;
+    height: 200px;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+}
+
+.carousel-inner{
+    padding: 1em;
+}
+
+/* .carousel-item{
+    display: flex;
+   flex-direction: row;
+   
+    
+} */
+
+
+.card{
+    margin: 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22,22,26,0.18);
+    border: none;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 30%;
+    transform: translateY(-80%);
+}
+
+@media (min-width: 576px){
+    .carousel-inner{
+        display: block;
+        padding: 0;
+        width: 1000px;
+    }
+
+    .carousel-item{
+        margin-right: 0;
+        flex: 0 0 39.333333%;
+        display: block;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .carousel-inner{
+        display: block;
+        padding: 0;
+    }
+
+    .carousel-item{
+        margin-right: 0;
+        flex: 0 0 20.333333%;
+        display: block;
+        width: 30px;
+        padding: 0;
+    }
+    .movie_img_rounded {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    
+}
+
+@media (max-width: 576px){
+    aside{
+        display: none;
+    }
+    nav{
+        
+    }
+}
+
+.my-carousel{
+    transition: transform 0.5s ease-in;
+}
+

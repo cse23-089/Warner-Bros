@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros.</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <h2 class="logo">Warner Bros</h2>
+        <ul>
+            <li> <a href="movies.html">Movies</a> </li>
+            <li> <a href="tvShows.html">TV Shows</a> </li>
+            <li> <a href="">
+                <div class="search">
+                    <input type="text" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </a> </li>
+            <li> 
+                <a href="#"> <i class="fa-solid fa-bars"></i>
+                    <div class="dropdown_menu">
+                        
+                        <ul>
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="games&apps.html">Games & Apps</a></li>
+                            <li> <a href="collections.html">Collections</a></li>
+                            <li> <a href="feedback.html">Feedback</a></li>
+                            <li> <a href="aboutUs.html">ABOUT US</a></li>
+                        </ul>
+                    
+                    </div> 
+                </a>
+                
+            </li>
+        </ul>
+    </nav> <br><br>
+
+    <div class="container feedback-form">
+       
+        <form action="" method="post">
+            <h3>Drop Us A feedback</h3>
+            <div class="row">
+                <div class="col-nd-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="TxtEmail" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <textarea name="txtMsg" class="form-control" placeholder="Provide Feedback" id="txtArea" required></textarea>
+                    <div class="form-group">
+                        <input type="submit" name="btnsubmit" class="btnFeedback" value="Send Feedback" style="outline: none;">
+                    </div>
+                </div>
+                <div class="col-nd-6">
+                    <div class="form-group">
+                        <p>Are you satisfied with our services?</p>
+                        Yes <input type="radio" name="1" required>
+                        No <input type="radio" name="1" required>
+                    </div>
+                    <div class="form-group" >
+                        <p>How much would you rate us out of 5?</p>
+                        1 <input type="radio" name="2" required>
+                        2 <input type="radio" name="2" required>
+                        3 <input type="radio" name="2" required>
+                        4 <input type="radio" name="2" required>
+                        5<input type="radio" name="2" requireds>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+     <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About Us</h4>
+                <p>Warner Bros. stands as a leading name in entertainment, celebrated for its iconic films and television shows. With a rich history in producing and distributing engaging content, the Warner Bros. website is a go-to destination for movie and TV show enthusiasts.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="aboutUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p> Gaborone, Broadhurst Plot 27983</p>
+                <p>Email: <a href="mailto:info@yourcompany.com">info@warnerBros.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+267 71234567</a></p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="https://www.facebook.com/warnerbrosent" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.twitter.com/warnerbros" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/warnerbrosentertainment" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/warnerbros" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 WARNER BROS. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+          function openSuccessWindow() {
+        var successWindow = window.open('', 'SuccessWindow', 'width=200,height=100');
+        var successWindowContent = "<p style='text-align:center;font-size:24px;'>Successful!! &#10004;</p>";
+        successWindow.document.write(successWindowContent);
+    }
+    </script>
+</body>
+</html> 
